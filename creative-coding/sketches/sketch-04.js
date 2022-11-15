@@ -30,7 +30,6 @@ const sketch = () => {
       const h = cellh * 0.8
 
       context.save()
-      context.restore()
       context.translate(x, y)
       context.translate(margx, margy)
       context.translate(cellw * 0.5, cellh * 0.5)
@@ -41,6 +40,8 @@ const sketch = () => {
       context.moveTo(w * -0.5, 0)
       context.lineTo(w * 0.5, 0)
       context.stroke()
+
+      context.restore()
     }
   }
 }
